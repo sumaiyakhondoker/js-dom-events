@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <p id="input-text-display">Input Default Text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+
+    <script>
+        document.getElementById('btn-update').addEventListener('click', function(){
+            // console.log('update button clicked')
+            const inputField = document.getElementById('input-field');
+            // console.log(inputField)
+            const inputText = inputField.value;
+            // console.log(inputText)
+            const p = document.getElementById('input-text-display');
+            p.innerText = inputText;
+            inputField.value = '';
+        })
+    </script>
+</body>
+</html>
